@@ -1,0 +1,120 @@
+  body{
+	font-family :Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	background-image:url(../imagenes/hotel.jpg);
+		
+}
+body a{
+	text-decoration:none}
+#wrapper{
+	width: 1000px; 
+	min-height: auto;
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom:50px;
+	margin-top:20px;
+	border:3px solid#000;
+	background-color:#CCC;
+	padding:20px;
+	box-shadow:10px 10px 10px;
+	background-image:url(../imagenes/.jpg)
+	
+	
+	}
+#cabesera{
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		background-color:#03F;
+		min-height:100px;
+		padding:20px;
+		margin-bottom:10px;
+		
+		color:#fff;
+		font-weight:bold;
+		background-color:#06F
+		
+		
+}
+#menu{
+	font-family:
+	font-size:20px
+	margin-top:10px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	min-height:20px;
+	padding:20px;
+	border:solid #333;
+	background-color:#09F
+	
+	}
+	#menu a{
+		color:#FFF}
+	#menu a:hover{
+		color:#000}	
+	#menu li{
+		margin-left:60px;
+		display:inline;
+		
+		}
+	
+		
+#content{
+	margin-top:30px;
+	
+	}
+#izquierda{
+	float:left;}
+	#sector{
+		color:#fff;
+		font-weight:bold;
+		background-color:#06F;
+	    -moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		width: 250px;
+		min-height:200px;
+		padding:5px;
+		border:solid #f00;
+		background-color:#0CC;
+		background-image:url(../imagenes/.jpg)
+}
+#derecha{
+	float:right;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+    width:670px;
+	min-height:770px;
+    padding:10ps;
+    border: solid #F00;
+	margin-bottom:10px;
+	background-color:#0CC;
+	background-image:url(../imagenes/picina.jpg);
+	color:#fff;
+		font-weight:bold;
+		background-color:#06F;
+	
+	}
+	.caja_de_texto{
+		padding:3px;
+		font-weight:bold;
+		font-size:12px;
+		color:#000;
+		}
+	.boton{
+		padding-top:3px;
+		padding-bottom:3px;
+		background-color:#F00;
+		color:#FFF;
+		}	
+#pie{
+	clear:both;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	background-color:#03F;
+	min-height:20px;
+	padding:20px;}
+
+		#pie a{
+		color:#FFF}
+	#pie a:hover{
+		color:#000}
