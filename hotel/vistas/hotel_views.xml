@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+ <data>
+     <record model="ir.ui.view" id="view_reg_hotel_form">
+        <field name="name">vista form del formulario reg.hotel </field>
+        <field name="model">reg.hotel</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Registro del hotel">
+                <group>
+                    <field name="nombre" placeholder="Nombre" />
+                    <field name="cuantas habitaciones" placeholder="numeros de habitaciones" />
+                    <field name="Forma de pago" placeholder="credito,debito,efecctivo"/>
+                    <field name="ci" placeholder="C.I"/>
+                    <field name="fecha" placeholder="fecha de registro"/>
+                    <field name="active"/>
+                </group>
+                
+            </form>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_reg_hotel_tree">
+        <field name="name">vista tree del formulario reg.hotel</field>
+        <field name="model">reg.hotel</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Registro de hotel">
+                <field name="nombre"/>
+                <field name="Forma de pago"/>
+                <field name="ci"/>
+				<field name="cuantas habitaciones"/>
+            </tree>
+        </field>
+    </record>
+    
+    
+    <record model="ir.actions.act_window" id="action_reg_hotel">
+        <field name="name">Gestión para el registro</field>
+        <field name="res_model">reg.hotel</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form,tree</field>
+    </record>
+    
+    <menuitem 
+        name="Hotel" 
+        id="reg_hotel_horizontal_menu" 
+        sequence="5" />
+    <menuitem 
+        name="Gestión de registro" 
+        id="reg_hotel_vertical_menu" 
+        parent="reg_hotel_horizontal_menu" 
+        sequence="5"/>
+        
+    <menuitem 
+        name="Registros del hotel" 
+        id="reg_hotel_subvertical_menu" 
+        parent="reg_hotel_vertical_menu"
+        action="action_reg_hotel" 
+        sequence="5"/>
+
+ </data>
+</openerp>
